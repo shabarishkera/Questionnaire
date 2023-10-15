@@ -1,21 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 import {useEffect} from 'react'
-import NoInternet from './NoInternet'
+
+import HomeScreen from './HomeScreen';
+import {BrowserRouter as Router,Routes,Route
+ } from 'react-router-dom';
 function App() {
   useEffect(()=>{
 
 
   },[])
   return (
-    <div className="App">
-      <p>hello</p>
-      <NoInternet>
-        {/* Your internet-dependent components go here */}
-        {/* For example, a chat component, a news feed, etc. */}
-      </NoInternet>
+    <>
+    <Router>
+      <Routes>
+    <Route path='/' Component={HomeScreen}></Route>
+   
       
-    </div>
+    </Routes>
+          </Router>
+    </>
   );
 }
 
