@@ -12,7 +12,8 @@ const CustomBox = ({title, color }) => {
     fontSize: '24px',
     fontWeight: 'bold',
     color: '#000',
-    margin:'10px'
+    margin:'10px',
+    padding:'20px'
   };
 
   return (
