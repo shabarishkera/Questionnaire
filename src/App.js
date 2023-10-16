@@ -5,6 +5,7 @@ import Questions  from './Questions';
 import {useEffect} from 'react'
 import Store from './Store'
 import HomeScreen from './HomeScreen';
+import Answers from './Answers';
 import {BrowserRouter as Router,Routes,Route
  } from 'react-router-dom';
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
     <Route path='/' Component={HomeScreen}></Route>
     <Route path='/questions' Component={Questions}></Route>
+    <Route path='/answers' Component={Answers}></Route>
    
       
     </Routes>

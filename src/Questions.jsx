@@ -1,18 +1,21 @@
 import {React,useContext,useEffect,useState} from 'react'
 import { useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import QnBox from './QnBox'
 import {context,Store} from './Store'
 
 export default function Questions() {
+  const nav=useNavigate();
   const [qns,setqns]=useState([]);
   const p=useLocation();
 const {ans_no,setans_no}=useContext(context);
-console.log(ans_no);
   const handlesubmit=()=>{
     if(ans_no!=30)
     {alert("Please Attend All Questions ");return;
   }
-  //if anwered 
+  nav('/answers',{state:{qns}});
+
+
 
   }
   useEffect(()=>
