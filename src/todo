@@ -1,0 +1,4 @@
+-add submit functionality
+-coustomize styling
+
+--when submit is clicked it should check whether all the radio buttons are selected 

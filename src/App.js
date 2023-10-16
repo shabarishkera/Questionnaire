@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Questions  from './Questions';
 import {useEffect} from 'react'
-
+import Store from './Store'
 import HomeScreen from './HomeScreen';
 import {BrowserRouter as Router,Routes,Route
  } from 'react-router-dom';
@@ -14,6 +14,7 @@ function App() {
   },[])
   return (
     <>
+    <Store>
     <Router>
       <Routes>
     <Route path='/' Component={HomeScreen}></Route>
@@ -22,6 +23,7 @@ function App() {
       
     </Routes>
           </Router>
+          </Store>
     </>
   );
 }

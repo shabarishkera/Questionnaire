@@ -1,27 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function QnBox(props) {
   const [selectedOption, setSelectedOption] = useState('');
-
+const [options,setoptions]=useState([])
   const handleOptionChange = (e) => {
+    if(selectedOption=='')
+    props.setans_no(props.ans_no+1)
     setSelectedOption(e.target.value);
+    console.log(props.ans_no)
   };
-  console.log(props.obj.question)
-  var options=[];
-  options.push(props.obj.correct_answer);
-  options.push(props.obj.incorrect_answers[1]);
-  options.push(props.obj.incorrect_answers[2]);
-  options.push(props.obj.incorrect_answers[0]);
-  options=options.sort( ()=>Math.random()-0.5 );
-  console.log(options)
+  useEffect(()=>{
+
+    var temp=[];
+    temp.push(props.obj.correct_answer);
+    temp.push(props.obj.incorrect_answers[1]);
+    temp.push(props.obj.incorrect_answers[2]);
+temp.push(props.obj.incorrect_answers[0]);
+    temp=temp.sort( ()=>Math.random()-0.5 );
+    setoptions(temp);
+
+  },[])
+
+
   return (
     <div className='qn-box'>
-      <h2>{props.obj.question}</h2>
+      <h2>{props.index+1}.{props.obj.question}</h2>
       <label>
         <input
           type="radio"
           value={options[0]}
-          checked={selectedOption === 'option1'}
+          checked={selectedOption === options[0]}
           onChange={handleOptionChange}
         />
         {options[0]}
@@ -31,7 +39,7 @@ function QnBox(props) {
         <input
           type="radio"
           value={options[1]}
-          checked={selectedOption === 'option2'}
+          checked={selectedOption === options[1]}
           onChange={handleOptionChange}
         />
         {options[1]}
@@ -41,7 +49,7 @@ function QnBox(props) {
         <input
           type="radio"
           value={options[2]}
-          checked={selectedOption === 'option3'}
+          checked={selectedOption === options[2]}
           onChange={handleOptionChange}
         />
        {options[2]}
@@ -51,7 +59,7 @@ function QnBox(props) {
         <input
           type="radio"
           value={options[3]}
-          checked={selectedOption === 'option4'}
+          checked={selectedOption === options[3]}
           onChange={handleOptionChange}
         />
         {options[3]}

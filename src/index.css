@@ -21,3 +21,9 @@ code {
 input[type="radio"] {
   margin-right: 5px;
 }
+.submit-btn
+{
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
