@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.qn-box {
+  border: 2px solid #007bff; /* Add a border to the container */
+  padding: 10px;
+  margin: 10px;
+  background-color: #f7f7f7;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
