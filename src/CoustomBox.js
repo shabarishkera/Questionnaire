@@ -1,6 +1,14 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const CustomBox = ({title, color }) => {
+  const nav=useNavigate();
+  const handleclick=async()=>{
+   var res= await fetch('https://opentdb.com/api.php?amount=30&category=9&type=multiple')
+    res=await res.json();
+    res=res.results;
+    nav('/questions', { state: { res:res } });
+
+  }
   const boxStyle = {
     width: '200px',
     height: '200px',
@@ -17,7 +25,8 @@ const CustomBox = ({title, color }) => {
   };
 
   return (
-    <div style={boxStyle}>
+    
+    <div onClick={handleclick} style={boxStyle}>
       {title}
     </div>
   );
