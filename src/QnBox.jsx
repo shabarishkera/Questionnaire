@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
 function QnBox(props) {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isselected,setselected]=useState(false)
 const [options,setoptions]=useState([])
   const handleOptionChange = (e) => {
-    if(selectedOption=='')
-    props.setans_no(props.ans_no+1)
+    if(!isselected)
+    {setselected(true)
+      props.setans_no(props.ans_no+1)}
     setSelectedOption(e.target.value);
     console.log(props.ans_no)
   };

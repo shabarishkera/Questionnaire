@@ -10,9 +10,9 @@ export default function Questions() {
   const p=useLocation();
 const {ans_no,setans_no}=useContext(context);
   const handlesubmit=()=>{
-    if(ans_no!=30)
-    {alert("Please Attend All Questions ");return;
-  }
+  //   if(ans_no!=30)
+  //   {alert("Please Attend All Questions ");return;
+  // }
   nav('/answers',{state:{qns}});
 
 

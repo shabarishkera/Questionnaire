@@ -10,15 +10,21 @@ export default function Answers() {
     useEffect(()=>
   {
   
-    setqns(p.state.res);
+    setqns(p.state.qns);
 
 
   },[])
   return (
-    <div>
-      this is anwers page
-
-      --show all the questions and its anwers
+    <div className='container'>
+      {qns.map((item, index) => {
+            return(
+          <div className="row container ans-container" key={index}>
+          <h2>{item.question}</h2>
+          <p>{item.correct_answer}</p>
+           
+          </div>
+            )
+})}
     </div>
   )
 }
