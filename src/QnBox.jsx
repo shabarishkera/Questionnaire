@@ -25,8 +25,8 @@ temp.push(props.obj.incorrect_answers[0]);
 
 
   return (
-    <div className='qn-box'>
-      <h2>{props.index+1}.{props.obj.question}</h2>
+    <div className='qn-box rounded-2 shadow my-5'>
+      <h2><span className='text-primary'>{props.index+1}</span>.{props.obj.question}</h2>
       <label>
         <input
           type="radio"
@@ -66,6 +66,9 @@ temp.push(props.obj.incorrect_answers[0]);
         />
         {options[3]}
       </label>
+      <div  className='bg-light text-success rounded-2 m-3 text-center h3 '>
+        <p className={props.show?'hidden':''}>{props.obj.correct_answer}</p>
+      </div>
     </div>
   );
 }

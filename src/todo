@@ -1,4 +1,3 @@
--add submit functionality
--coustomize styling
+-instead of showing snas at different page show ans at the same page itself
 
---when submit is clicked it should check whether all the radio buttons are selected 
+--add the ability to show the results 
