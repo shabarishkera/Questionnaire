@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomBox from './CoustomBox'; // Correct the import path
 import { arr, hexColors } from './ListOfCategories'; // Correct the import path and add destructuring for arr and hexColors
-
+import Footer from './Footer';
 export default function HomeScreen() {
   return (
     <>
@@ -22,6 +22,7 @@ backgroundRepeat:'no-repeat'}}>
             <div class="lc-block col-md-8">
                 <div editable="rich">
                     <p class="lead">
+                    A React-based quiz application that allows users to answer 30 questions from a variety of categories using the Trivia API. Users can choose from 10+ categories to customize their quiz experience
                     </p>
                 </div>
             </div>
@@ -30,6 +31,77 @@ backgroundRepeat:'no-repeat'}}>
             </div>
         </div>
     </div>
+
+
+
+
+
+    <div class="row mb-4 align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="lc-block text-center">
+                    <img class="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/app_development_SVG.svg" srcset="" sizes="" width="" height=""/>
+                </div>
+            </div>
+            <div class="col-lg-6 p-lg-6">
+                <div class="lc-block mb-5">
+                    <div editable="rich">
+
+                        <h2 class="display-6 fw-bold"> What You Get :</h2>
+
+                        <p class="lead"><br/> how you will be benifited from our app</p>
+                    </div>
+                </div>
+                
+                <div class="lc-block">
+                    <div class="d-inline-flex">
+                        <div>
+                            
+                        </div>
+                        
+  
+                        <div class="ms-3 align-self-center" editable="rich">
+                            <p>Interactive Learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <div class="d-inline-flex">
+                        <div>
+                           
+                        </div>
+
+                        <div class="ms-3 align-self-center" editable="rich">
+                            <p>Instant Feedback</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <div class="d-inline-flex">
+                        <div>
+                           
+                        </div>
+
+                        <div class="ms-3 align-self-center" editable="rich">
+                            <p>Answer 30 questions from the selected category.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <div class="d-inline-flex">
+                        <div>
+                            
+                        </div>
+
+                        <div class="ms-3 align-self-center" editable="rich">
+                            <p>Assessment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     <div class="container-fluid px-4 py-5 my-5 text-center">
         <div class="lc-block mb-4">
             <div editable="rich">
@@ -68,6 +140,7 @@ backgroundRepeat:'no-repeat'}}>
 })}
       </div>
     </div>
+    <Footer/>
     </>
   );
 }
