@@ -8,3 +8,4 @@ export const hexColors = [
     '#FF5733', '#C70039', '#900C3F', '#581845', '#FFC300'
   ];
   
+  

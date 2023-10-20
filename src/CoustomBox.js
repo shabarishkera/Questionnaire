@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import {mapping } from './Mapp'
 const CustomBox = ({title, color }) => {
   const nav=useNavigate();
   const handleclick=async()=>{
-   var res= await fetch('https://opentdb.com/api.php?amount=30&category=9&type=multiple')
+   var res= await fetch(`https://opentdb.com/api.php?amount=30&category=${mapping[title]}&type=multiple`)
     res=await res.json();
     res=res.results;
     nav('/questions', { state: { res:res } });
