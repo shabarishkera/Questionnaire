@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomBox from './CoustomBox'; // Correct the import path
 import { arr, hexColors } from './ListOfCategories'; // Correct the import path and add destructuring for arr and hexColors
+import { Link } from 'react-router-dom';
 import Footer from './Footer';
 export default function HomeScreen() {
   return (
@@ -116,7 +117,7 @@ backgroundRepeat:'no-repeat'}}>
         </div>
 
         <div className="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"> <a className="btn btn-primary btn-lg px-4 gap-3" href="#pick" role="button">Start Quiz  Now</a>
-            <a className="btn btn-outline-secondary btn-lg px-4" href="#" role="button">Learn more</a>
+            <Link className="btn btn-outline-secondary btn-lg px-4" to="/learnmore" role="button">Learn more</Link>
         </div>
         <div className="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
             <img className="img-fluid" src="https://lclibrary.b-cdn.net/starters/wp-content/uploads/sites/15/2021/10/undraw_going_up_ttm5.svg" width="" height="783" srcset="" sizes="" alt=""/>

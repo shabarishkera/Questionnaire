@@ -66,7 +66,7 @@ export default function Questions() {
                 </div>
                 <div class="lc-block mb-5">
                     <div editable="rich">
-                        <p class="lead">Answer the below questions and click on  'show resuls'</p>
+                        <p class="lead">Answer the below questions and click on  'show results'</p>
 
                     </div>
                 </div>
