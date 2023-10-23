@@ -4,10 +4,16 @@ import {mapping } from './Mapp'
 const CustomBox = ({title, color }) => {
   const nav=useNavigate();
   const handleclick=async()=>{
+    try {
    var res= await fetch(`https://opentdb.com/api.php?amount=30&category=${mapping[title]}&type=multiple`)
     res=await res.json();
     res=res.results;
     nav('/questions', { state: { res:res } });
+    }
+    catch (err)
+    {
+      nav('/nointernet');
+    }
 
   }
   const boxStyle = {

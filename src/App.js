@@ -9,6 +9,7 @@ import Answers from './Answers';
 import {BrowserRouter as Router,Routes,Route
  } from 'react-router-dom';
 import LearnMore from './LearnMore';
+import NoInternet from './NoInternet';
 function App() {
   useEffect(()=>{
 
@@ -23,6 +24,7 @@ function App() {
     <Route path='/questions' Component={Questions}></Route>
     <Route path='/answers' Component={Answers}></Route>
     <Route path='/learnmore' Component={LearnMore}></Route>
+    <Route path='/nointernet' Component={NoInternet}></Route>
    
       
     </Routes>

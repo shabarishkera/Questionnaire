@@ -53,24 +53,24 @@ export default function Questions() {
     <>
 
       <div className='container '>
-      <div class="container text-center py-6">
-        <div class="row">
-            <div class="col-lg-6 col-xl-5 mx-auto">
-                <div class="lc-block mb-3">
-                    <img class="img-fluid wp-image-1892" src="https://livecanvas.com/media/logos/ipsum/logoipsum-logo-35.svg" width="" height="39" srcset="" sizes="" alt=""/>
+      <div className="container text-center py-6">
+        <div className="row">
+            <div className="col-lg-6 col-xl-5 mx-auto">
+                <div className="lc-block mb-3">
+                    <img className="img-fluid wp-image-1892" src="https://livecanvas.com/media/logos/ipsum/logoipsum-logo-35.svg" width="" height="39" srcSet="" sizes="" alt=""/>
                 </div>
-                <div class="lc-block mb-3">
+                <div className="lc-block mb-3">
                     <div editable="rich">
                         <h1>Boost Your Brain</h1>
                     </div>
                 </div>
-                <div class="lc-block mb-5">
+                <div className="lc-block mb-5">
                     <div editable="rich">
-                        <p class="lead">Answer the below questions and click on  'show results'</p>
+                        <p className="lead">Answer the below questions and click on  'show results'</p>
 
                     </div>
                 </div>
-                <div class="lc-block"><a class="btn btn-danger btn-lg" href="#" role="button">All the Best</a>
+                <div className="lc-block"><a className="btn btn-danger btn-lg" href="#" role="button">All the Best</a>
                 </div>
             </div>
 

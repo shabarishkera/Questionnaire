@@ -40,7 +40,7 @@ backgroundRepeat:'no-repeat'}}>
     <div className="row mb-4 align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0">
                 <div className="lc-block text-center">
-                    <img className="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/app_development_SVG.svg" srcset="" sizes="" width="" height=""/>
+                    <img className="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/app_development_SVG.svg" srcSet="" sizes="" width="" height=""/>
                 </div>
             </div>
             <div className="col-lg-6 p-lg-6">
@@ -120,7 +120,7 @@ backgroundRepeat:'no-repeat'}}>
             <Link className="btn btn-outline-secondary btn-lg px-4" to="/learnmore" role="button">Learn more</Link>
         </div>
         <div className="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <img className="img-fluid" src="https://lclibrary.b-cdn.net/starters/wp-content/uploads/sites/15/2021/10/undraw_going_up_ttm5.svg" width="" height="783" srcset="" sizes="" alt=""/>
+            <img className="img-fluid" src="https://lclibrary.b-cdn.net/starters/wp-content/uploads/sites/15/2021/10/undraw_going_up_ttm5.svg" width="" height="783" srcSet="" sizes="" alt=""/>
         </div>
     </div>
     <div className="py-5 bg-transparent text-center w-100">
