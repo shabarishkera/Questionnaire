@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9546de4.css",
-    "main.js": "/static/js/main.e55a691b.js",
-    "static/js/787.9e90ff23.chunk.js": "/static/js/787.9e90ff23.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.a9546de4.css.map": "/static/css/main.a9546de4.css.map",
-    "main.e55a691b.js.map": "/static/js/main.e55a691b.js.map",
-    "787.9e90ff23.chunk.js.map": "/static/js/787.9e90ff23.chunk.js.map"
+    "main.css": "/Questionnaire/static/css/main.a9546de4.css",
+    "main.js": "/Questionnaire/static/js/main.310faf34.js",
+    "static/js/787.9e90ff23.chunk.js": "/Questionnaire/static/js/787.9e90ff23.chunk.js",
+    "static/media/logo.svg": "/Questionnaire/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Questionnaire/index.html",
+    "main.a9546de4.css.map": "/Questionnaire/static/css/main.a9546de4.css.map",
+    "main.310faf34.js.map": "/Questionnaire/static/js/main.310faf34.js.map",
+    "787.9e90ff23.chunk.js.map": "/Questionnaire/static/js/787.9e90ff23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9546de4.css",
-    "static/js/main.e55a691b.js"
+    "static/js/main.310faf34.js"
   ]
 }
