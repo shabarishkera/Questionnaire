@@ -3,9 +3,11 @@ import CustomBox from './CoustomBox'; // Correct the import path
 import { arr, hexColors } from './ListOfCategories'; // Correct the import path and add destructuring for arr and hexColors
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import Navbar from './Navbar';
 export default function HomeScreen() {
   return (
     <>
+    <Navbar/>
       <div lc-helper="background" className="container-fluid py-5 mb-4 d-flex justify-content-center" style={{backgroundImage: `url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1124&amp;q=100')`,
     backgroundPosition: `center`,
 backgroundSize:'cover',
@@ -130,7 +132,7 @@ backgroundRepeat:'no-repeat'}}>
         </div>
     </div>
 
-    <div  className="container  justify-content-center align-center">
+    <div  id='topics' className="container  justify-content-center align-center">
       <div className="row  justify-content-center ">
         {arr.map((item, index) => {
             return(
