@@ -24,7 +24,18 @@ A React-based quiz application that allows users to answer 30 questions from a v
 
 ## Demo
 Include a link to a live demo of your application or a short video showcasing its features.
-
+## screenshots
+![project screenshot](./src/sc/sc1.png)
+![project screenshot](./src/sc/sc2.png)
+![project screenshot](./src/sc/sc3.png)
+![project screenshot](./src/sc/sc4.png)
+![project screenshot](./src/sc/sc5.png)
+![project screenshot](./src/sc/sc6.png)
+![project screenshot](./src/sc/sc7.png)
+![project screenshot](./src/sc/sc8.png)
+![project screenshot](./src/sc/sc9.png)
+![project screenshot](./src/sc/sc10.png)
+![project screenshot](./src/sc/sc11.png)
 ## Installation
 To run this project on your local machine, follow these steps:
 
